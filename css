@@ -1,3 +1,258 @@
+body {
+    /*background-image: url('/Users/KallieH/Pictures/Kallie Gabe photoshoot 2018/DSC_0449.jpg');*/
+    background-color: #bf8173;/*#9c8682;/*#e8d4d3;*//*lightpink*/
+}
+
+h1, h2 {
+    font-family: 'Rosario', sans-serif;
+    letter-spacing: .2em;/*.12em;*/
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: black; /*#abdbdf;*/
+    font-weight: bold;
+    padding: 1em;
+}
+
+h3, h5 {
+    font-family: 'Rosario', sans-serif;
+    letter-spacing: .1em;/*.12em;*/
+    font-weight: 100;
+    color: #573936;
+}
+
+.socialmedia {
+    display: inline-block;
+}
+
+.socialmedia img {
+    max-height: 1.5em;
+    margin: auto .5em auto .5em;
+}
+
+.navbar a {
+    font-family: 'Rosario', sans-serif; /*'Raleway', sans-serif;*/
+    text-transform: uppercase;
+    letter-spacing: .1em;/*.12em;*/
+    font-weight: 100;
+}
+
+.header img {
+    width: 100%;
+    margin-top: 3.5em;
+    border-color: #573936;
+    border-bottom: solid 5px;
+}
+
+
+/***WELCOME INFO***/
+/*.index-content {
+    max-width: 80%;
+}*/
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9*/
+	padding-top: 25px;
+	height: 0;
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.enclosing-video {
+    margin: 3em 1em 3em 1em;
+    width: 100%;
+    display: inline-block;
+}
+
+.enclosing-video-demos {
+     width: 100%;
+     margin: auto;
+}
+
+.enclosing-video-index {
+     width: 100%;
+     margin: auto;
+     padding: 5em;
+}
+
+.enclosing-video-index h3 {
+    margin-top: -1em;
+}
+
+@media only screen and (max-width: 800px) {
+    .enclosing-video-index {
+        padding: 0px;
+        margin-bottom:.3em;
+    }
+
+    .enclosing-video-index h3 {
+        margin-top: 1.5em;
+        margin-bottom: 0;
+        font-size: .8em;
+    }
+}
+
+
+h1.aboutme {
+    margin-top: 0;
+}
+
+.get-to-know-me {
+    background-image: url('/Users/KallieH/Downloads/15032293_1209689445740985_7123203004306642273_n.jpg');
+    background-color: black;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: ;
+}
+
+.know-me {
+    display: inline-block;
+    margin: auto 5em auto 5em;
+    padding: 2em;
+    color: white;
+    border-style: solid;
+    border-color: #abdbdf;
+    background-color: black;
+    text-align: justify;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-width: 1024px) {
+    .get-to-know-me {
+        background-attachment: scroll;
+    }
+}
+
+.column-hs {
+    width: 20%;
+}
+
+/***HEADSHOT GALLERY***/
+/* Position the image container (needed to position the left and right arrows) */
+.thiscontainer {
+  position: relative;
+  max-width: 50%;
+  margin-left: 25%;
+  margin-top: 2em;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 2px 16px;
+  color: black;
+  font-style: italic;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+img.demo {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.demo {
+    width: 20%;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
 /***CONTACT FORM***/
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -42,10 +297,20 @@ input[type=submit]:hover {
     padding-bottom: 5em;
 }
 
+#trisko {
+    max-height: 5em;
+    margin-top: 1em;
+    border-radius: 8%;
+}
+
 #agent-info {
     margin: 10px auto 10px auto;
 }
 
+#contact-photo img {
+    width: 15em;
+    border-radius: 1em;
+}
 
 /**For PHP**/
 .error {
@@ -57,4 +322,242 @@ input[type=submit]:hover {
     text-align: center;
     font-weight: bold;
     font-size: 14px;
+}
+
+
+
+/*** PHOTOS ***/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-photos {
+  flex: 25%;
+  max-width: 25%;
+  padding: 6px 6px;/*0 4px;*/
+}
+
+.column-photos img {
+  margin-top: 8px;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: solid;
+  border-color: #573936;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column-photos {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column-photos {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* PHOTO OVERLAY*/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: .7;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/*** MEDIA & FOOTAGE ***/
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #573936;
+  color: #bf8173;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  font-family: 'Rosario', sans-serif;
+  letter-spacing: .2em;/*.12em;*/
+  text-transform: uppercase;
+}
+
+.tablink:hover {
+  background-color: #e0bdb3;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px 20px 10px 20px;
+}
+
+#DemoReels {background-color: white;}
+#Commercials {background-color: white;}
+#Advertisements {background-color: white;}
+#SpecialSkills {background-color: white;}
+
+@media only screen and (max-width: 1000px) {
+    .tablink {
+        font-size: .5em;
+    }
+
+    .tablink {
+        padding: 14px 0;
+    }
+
+    .media-content h3 {
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+    .media-content h5 {
+        font-size: 1em;
+        margin-top: 0;
+    }
+}
+
+
+
+.fluid-container {
+    background-color: white;
+    padding: 2em .5em 2em .5em;
+}
+
+.media-content {
+    border-style: solid;
+    border-color: white;
+}
+
+.media-content p {
+    color: #573936;
+    font-family: 'Rosario', sans-serif;
+    letter-spacing: .1em;/*.12em;*/
+    font-weight: 100;
+}
+
+.media img {
+    max-width: 100%;
+    border-radius: 3%;
+}
+
+.media {
+    max-width: 75%;
+    display: inline-block;
+    margin: 1em auto 1em auto;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+@media only screen and (max-width: 800px) {
+    .media {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+.adPic img {
+    max-width: 100%;
+    border-radius: 0%;
+}
+
+.adPic {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.specialskills {
+    display: inline-grid;
+    margin: 1em;
+}
+
+.specialskills img {
+    max-height: 20em;
+    border-radius: .5em;
+}
+
+
+/*** ABOUT ***/
+.about-content img {
+    max-width: 70%;
+    border-color: #bf8173;
+    border-style: solid;
+}
+
+.about-content p {
+    text-align: justify;
+    padding: auto 5em auto 5em;
+    font-family: 'Rosario', sans-serif;
+    letter-spacing: .1em;/*.12em;*/
+}
+
+.about-content {
+    height: 100%;
+}
+
+
+/*** REDIRECT & FOOTER ***/
+.redirect {
+    font-size: .5em;
+    text-transform: uppercase;
+    margin: auto auto 2em auto;
+    color: #abdbdf;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    font-size: .5em;
+    font-style: italic;
+    opacity: .9;
+    padding: 1em;
 }
