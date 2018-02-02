@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <?php include('form_process.php'); ?>
+
+  <div class="container">
+              <a name="contact">
+                  <div class="container-contact container">
+                      <center><h1 class="aboutme" style="color: white;">Let's Chat</h1></center>
+                      <center><h5 style="color: white; letter-spacing: .1em;">Trisko Talent Management | Aaron Alexander | aaron@triskotalent.com | (604) 306.9803 </h5></center>
+                              <!--CONTACT FORM-->
+                            <form id=contact action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
+                                <fieldset>
+                                    <label>Name</label>
+                                    <input placeholder="Dobby" type="text" tabindex="1" name="name" autofocus>
+                                    <span class="error"><?php $name_error ?></span>
+                                </fieldset>
+
+                                <fieldset>
+                                    <label>Email</label>
+                                    <input placeholder="dobby@elf.com" type="text" name="email" tabindex="2">
+                                    <span class="error"><?php $email_error ?></span>
+                                </fieldset>
+
+                                <fieldset>
+                                    <label>Message</label>
+                                    <textarea placeholder="Don't be shy, I'd love to hear from you!" type="text" name="message" tabindex="3"></textarea>
+                                </fieldset>
+
+                                <fieldset>
+                                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" style="background-color: #573936;
+                                      width: 100%; color: white; font-size: 1.3em; font-family: 'Rosario', sans-serif; text-transform: uppercase;
+                                      letter-spacing: .2em; border-radius: border-radius: 4px; cursor: pointer; border: none; padding: 12px 20px;
+                                      margin-top: 1em;">Submit</button>
+                                </fieldset>
+                              <!--<input type="submit" style="background-color: #573936; width: 100%;" value="Submit">-->
+                              <!--#871e10-->
+                            </form>
+                  </div>
+              </a>
+          </div>
+</html>
